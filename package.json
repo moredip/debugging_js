@@ -5,6 +5,7 @@
   "author": "Pete Hodgson <git@thepete.net>",
   "license": "MIT",
   "scripts": {
+    "shell": "sh",
     "test": "mocha",
     "test:debug": "mocha --inspect --debug-brk --watch",
 		"start": "node src"

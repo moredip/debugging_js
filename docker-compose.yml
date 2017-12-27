@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  workshop:
+    image: node:9.3.0-alpine
+    working_dir: /workshop
+    entrypoint: /workshop/docker/workshop-entrypoint
+    volumes:
+      - .:/workshop
+      - node_modules:/workshop/node_modules
+
+volumes:
+  node_modules:
